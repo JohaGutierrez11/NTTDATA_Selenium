@@ -39,6 +39,7 @@ Información adicional: Para concluir la instalación del proyecto, se debe:
 * Ir a la opción Archivo
 * Dar clic en la opción Abrir
 * Elegir la carpeta que se clonó
+* git checkout master 
 ```
 ## Instrucciones para ejecutar los test
 * Ejecutar todas las pruebas del proyecto, se utiliza el comando:
