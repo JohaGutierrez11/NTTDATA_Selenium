@@ -8,7 +8,7 @@ public class CheckoutInformation extends BasePage {
     private String btnContinue= "continue";
 
     public CheckoutInformation(){
-        super(driver);
+        super();
     }
 
     public void completeForm(String firstName, String lastN, String zip){

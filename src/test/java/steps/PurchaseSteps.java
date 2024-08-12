@@ -45,7 +45,7 @@ public class PurchaseSteps {
         cart.viewCart();
     }
 
-    @Then("The user complete the information form with name {string}, last name {string} and Zip Code {string}")
+    @Then("The user completes the information form with name {string}, last name {string} and Zip Code {string}")
     public void completeFormInformation(String name, String lastname,String zipCode){
         form.completeForm(name,lastname,zipCode);
 

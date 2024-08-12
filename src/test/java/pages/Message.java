@@ -4,7 +4,7 @@ public class Message extends BasePage{
 
     private String message = ".complete-header";
     public Message(){
-        super(driver);
+        super();
     }
 
     public Boolean compareMessage(String messageTxt){

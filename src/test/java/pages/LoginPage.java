@@ -9,7 +9,7 @@ public class LoginPage extends BasePage {
     private String btnLogin = "login-button";
 
     public LoginPage() {
-        super(driver);
+        super();
     }
 
     public void navigateToSauceDemo() {

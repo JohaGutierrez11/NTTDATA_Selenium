@@ -7,7 +7,7 @@ public class SelectItems extends BasePage{
     private String cartOption = "shopping_cart_link";
 
     public SelectItems(){
-        super(driver);
+        super();
     }
 
     public void addItems(){

@@ -14,15 +14,23 @@ import java.time.Duration;
 public class BasePage {
 
     protected static WebDriver driver;
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+    WebDriverWait wait;
 
     static {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
     }
 
-    public BasePage(WebDriver driver) {
-        BasePage.driver = driver;
+    public BasePage() {
+        wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+    }
+
+    public static WebDriver getDriver() {
+        if (driver == null) {
+            WebDriverManager.chromedriver().setup();
+            driver = new ChromeDriver();
+        }
+        return driver;
     }
 
     public static void navigateTo(String url) {
@@ -30,7 +38,10 @@ public class BasePage {
     }
 
     public static void closeBrowser() {
-        driver.quit();
+        if (driver != null) {
+            driver.quit();
+            driver = null;
+        }
     }
 
     private WebElement findID(String locator) {
@@ -71,5 +82,4 @@ public class BasePage {
         String actualMessage = driver.findElement(By.cssSelector(locator)).getText();
         return actualMessage.equals(expectedMessage);
     }
-
 }

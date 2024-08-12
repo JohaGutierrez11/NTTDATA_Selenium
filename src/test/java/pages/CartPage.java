@@ -5,7 +5,7 @@ public class CartPage extends BasePage{
 
 
     public CartPage(){
-        super(driver);
+        super();
     }
 
     public void viewCart(){

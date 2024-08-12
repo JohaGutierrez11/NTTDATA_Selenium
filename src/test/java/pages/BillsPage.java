@@ -6,7 +6,7 @@ public class BillsPage extends BasePage{
 
 
     public BillsPage(){
-        super(driver);
+        super();
     }
 
     public void finishPurchase(){
