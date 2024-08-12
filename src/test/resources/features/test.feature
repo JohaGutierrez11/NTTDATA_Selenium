@@ -6,7 +6,7 @@ Feature: Complete purchase
   @Login
   Scenario Outline: Login in SauceDemo
     Given The user navigates to SauceDemo
-    And The user logins with user <username> and password <password>
+    And The user logins with user "<username>" and password "<password>"
     And The user clicks on button login
     When The user chooses two items
     And The user views the shopping cart
