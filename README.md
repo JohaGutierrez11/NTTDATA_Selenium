@@ -46,6 +46,10 @@ Información adicional: Para concluir la instalación del proyecto, se debe:
 ```
 gradle clean test
 ```
+* Ver el reporte generado con cucumber
+```
+target/cucumber-reports.html
+```
 ## Colaboración
 ***
 Para realizar el proyecto se utilizaron las siguientes fuentes.
